@@ -192,7 +192,7 @@ const jewells = [
   },
   {
     name: "chains",
-    image: `${images.services_img_1}`,
+    image: `${images.Aaram1}`,
     title: "Chains",
     price: "2000",
   },
@@ -204,13 +204,13 @@ const jewells = [
   },
   {
     name: "aram",
-    image: `${images.services_img_1}`,
+    image: `${images.Aaram5}`,
     title: "Arams",
     price: "4000",
   },
   {
     name: "necklace",
-    image: `${images.services_img_4}`,
+    image: `${images.Necklace1}`,
     title: "Necklace",
     price: "5000",
   },
