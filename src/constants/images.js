@@ -93,6 +93,28 @@ import Necklace_Aaram12 from "../assets/images/Necklace_Aaram/Necklace_Aaram12.j
 import Necklace_Aaram13 from "../assets/images/Necklace_Aaram/Necklace_Aaram13.jpeg";
 import Necklace_Aaram14 from "../assets/images/Necklace_Aaram/Necklace_Aaram14.jpeg";
 import Necklace_Aaram15 from "../assets/images/Necklace_Aaram/Necklace_Aaram15.jpeg";
+import Aaram1 from "../assets/images/Aaram/Aaram1.jpeg";
+import Aaram2 from "../assets/images/Aaram/Aaram2.jpeg";
+import Aaram3 from "../assets/images/Aaram/Aaram3.jpeg";
+import Aaram4 from "../assets/images/Aaram/Aaram4.jpeg";
+import Aaram5 from "../assets/images/Aaram/Aaram5.jpeg";
+import Aaram6 from "../assets/images/Necklace_Aaram/Necklace_Aaram1.jpeg";
+import Aaram7 from "../assets/images/Necklace_Aaram/Necklace_Aaram2.jpeg";
+import Aaram8 from "../assets/images/Necklace_Aaram/Necklace_Aaram3.jpeg";
+import Aaram9 from "../assets/images/Necklace_Aaram/Necklace_Aaram4.jpeg";
+import Aaram10 from "../assets/images/Necklace_Aaram/Necklace_Aaram5.jpeg";
+import Aaram11 from "../assets/images/Necklace_Aaram/Necklace_Aaram6.jpeg";
+import Aaram12 from "../assets/images/Necklace_Aaram/Necklace_Aaram7.jpeg";
+import Aaram13 from "../assets/images/Necklace_Aaram/Necklace_Aaram8.jpeg";
+import Aaram14 from "../assets/images/Necklace_Aaram/Necklace_Aaram9.jpeg";
+import Aaram15 from "../assets/images/Necklace_Aaram/Necklace_Aaram10.jpeg";
+import Aaram16 from "../assets/images/Necklace_Aaram/Necklace_Aaram11.jpeg";
+import Aaram17 from "../assets/images/Necklace_Aaram/Necklace_Aaram12.jpeg";
+import Aaram18 from "../assets/images/Necklace_Aaram/Necklace_Aaram13.jpeg";
+import Aaram19 from "../assets/images/Necklace_Aaram/Necklace_Aaram14.jpeg";
+import Aaram20 from "../assets/images/Necklace_Aaram/Necklace_Aaram15.jpeg";
+
+
 
 
 import subscribe_background from "../assets/images/subscribe_background.jpeg";
@@ -110,6 +132,8 @@ const images = {
     ,bgImage,Ring
     ,AmmanThali,ChrisitianThali1,ChrisitianThali2,ChrisitianThali3,ChrisitianThali4,ChrisitianThali5,KombuThali,LingamThali,MalayalaThali1,MalayalaThali2,PattaiThali,PottuThali,RamarThali,SanguSakkaramThali,ShivanAmmanThali,ShivanThali,SirakuPillayarThali,PillayarThali,
     Necklace1,Necklace2,Necklace3,Necklace4,Necklace5,Necklace6,Necklace7,Necklace8,Necklace9,Necklace10,Necklace11,Necklace12,Necklace13,Necklace14,Necklace15,Necklace16,Necklace17,Necklace18,Necklace19,Necklace20,Necklace21,Necklace22,Necklace23,Necklace24,Necklace25,Necklace26,Necklace27,Necklace28,Necklace29,Necklace30,Necklace31,
-    Necklace_Aaram1,Necklace_Aaram2,Necklace_Aaram3,Necklace_Aaram4,Necklace_Aaram5,Necklace_Aaram6,Necklace_Aaram7,Necklace_Aaram8,Necklace_Aaram9,Necklace_Aaram10,Necklace_Aaram11,Necklace_Aaram12,Necklace_Aaram13,Necklace_Aaram14,Necklace_Aaram15
+    Necklace_Aaram1,Necklace_Aaram2,Necklace_Aaram3,Necklace_Aaram4,Necklace_Aaram5,Necklace_Aaram6,Necklace_Aaram7,Necklace_Aaram8,Necklace_Aaram9,Necklace_Aaram10,Necklace_Aaram11,Necklace_Aaram12,Necklace_Aaram13,Necklace_Aaram14,Necklace_Aaram15,
+    Aaram1,Aaram2,Aaram3,Aaram4,Aaram5,Aaram6,Aaram7,Aaram8,Aaram9,Aaram10,Aaram11,Aaram12,Aaram13,Aaram14,Aaram15,Aaram16,Aaram17,Aaram18,Aaram19,Aaram20
+
 }
 export default images;

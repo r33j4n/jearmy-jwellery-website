@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import './Navbar.css';
-import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import React, { useState } from "react";
+import "./Navbar.css";
+import { Link } from "react-router-dom";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [navToggler, setNavToggler] = useState(false);
@@ -17,7 +17,10 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-content">
           <div className="brand-and-toggler flex flex-sb">
-            <Link to="/" className="navbar-brand text-uppercase fw-4 text-white ls-2 fs-16">
+            <Link
+              to="/"
+              className="navbar-brand text-uppercase fw-4 text-white ls-2 fs-16"
+            >
               Jearmy Jwellery
             </Link>
             <button
@@ -28,14 +31,27 @@ const Navbar = () => {
               <FaBars size={30} />
             </button>
 
-            <div className={navToggler ? 'navbar-collapse show-navbar-collapse' : 'navbar-collapse'}>
-              <button type="button" className="navbar-close-btn text-white" onClick={closeNavbar}>
+            <div
+              className={
+                navToggler
+                  ? "navbar-collapse show-navbar-collapse"
+                  : "navbar-collapse"
+              }
+            >
+              <button
+                type="button"
+                className="navbar-close-btn text-white"
+                onClick={closeNavbar}
+              >
                 <FaTimes size={30} />
               </button>
               <ul className="navbar-nav">
-              <li className="nav-item">
-                  <Link to="/jwellery" className="nav-link text-white ls-1 text-uppercase fw-6 fs-22">
-                   All Collections
+                <li className="nav-item">
+                  <Link
+                    to="/jwellery"
+                    className="nav-link text-white ls-1 text-uppercase fw-6 fs-22"
+                  >
+                    All Collections
                   </Link>
                 </li>
                 <li className="nav-item dropdown">
@@ -58,22 +74,6 @@ const Navbar = () => {
                         </li>
                         <li>
                           <Link
-                            to="/jwellery/chains"
-                            className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
-                          >
-                            Chains
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            to="/jwellery/bracelet"
-                            className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
-                          >
-                            Bracelets
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
                             to="/jwellery/aram"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
                           >
@@ -90,6 +90,23 @@ const Navbar = () => {
                         </li>
                         <li>
                           <Link
+                            to="/jwellery/chains"
+                            className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
+                          >
+                            Chains
+                          </Link>
+                        </li>
+                        <li>
+                          <Link
+                            to="/jwellery/bracelet"
+                            className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
+                          >
+                            Bracelets
+                          </Link>
+                        </li>
+
+                        <li>
+                          <Link
                             to="/jwellery/ring"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
                           >
@@ -104,7 +121,6 @@ const Navbar = () => {
                             Earings
                           </Link>
                         </li>
-                        
                       </ul>
                     </div>
                   )}
@@ -115,17 +131,26 @@ const Navbar = () => {
                   </Link>
                 </li> */}
                 <li className="nav-item">
-                  <Link to="/gallery" className="nav-link text-white ls-1 text-uppercase fw-6 fs-22">
+                  <Link
+                    to="/gallery"
+                    className="nav-link text-white ls-1 text-uppercase fw-6 fs-22"
+                  >
                     Gallery
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/about" className="nav-link text-white ls-1 text-uppercase fw-6 fs-22">
+                  <Link
+                    to="/about"
+                    className="nav-link text-white ls-1 text-uppercase fw-6 fs-22"
+                  >
                     About
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link to="/contact" className="nav-link text-white ls-1 text-uppercase fw-6 fs-22">
+                  <Link
+                    to="/contact"
+                    className="nav-link text-white ls-1 text-uppercase fw-6 fs-22"
+                  >
                     Contact
                   </Link>
                 </li>
