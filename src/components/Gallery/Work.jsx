@@ -3,6 +3,9 @@ import {worksGallery} from "../../constants/data";
 import "./Work.css";
 import {BsPlusLg} from "react-icons/bs";
 import {ImCancelCircle} from "react-icons/im";
+import Aramx from '../../pages/aram copy';
+import Chainx from '../../pages/chainW';
+import Necklacex from '../../pages/necklace copy';
 
 const Work = () => {
     const [imageModal, setImageModal] = useState(false);
@@ -14,7 +17,11 @@ const Work = () => {
     }
 
   return (
-    <div className='work section-p bg-grey' id = "work">
+    <React.Fragment>
+    <Aramx />
+    <Chainx />
+    <Necklacex />
+<div className='work section-p bg-grey' id = "work">
         <div className={imageModal ? "image-box show-image-box" : "image-box"}>
             <div className='image-box-content'>
                 <img src = {imageSource} alt = "" />
@@ -48,6 +55,8 @@ const Work = () => {
             </div>
         </div>
     </div>
+    </React.Fragment>
+
   )
 }
 

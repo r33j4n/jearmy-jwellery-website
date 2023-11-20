@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
   const [navToggler, setNavToggler] = useState(false);
@@ -17,19 +18,17 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-content">
           <div className="brand-and-toggler flex flex-sb">
-            <Link
-              to="/"
-              className="navbar-brand text-uppercase fw-4 text-white ls-2 fs-16"
-            >
-              Jearmy Jwellery
-            </Link>
-            <button
-              type="button"
-              className="navbar-open-btn text-white"
-              onClick={() => setNavToggler(!navToggler)}
-            >
-              <FaBars size={30} />
-            </button>
+          <Link to="/" className="navbar-brand">
+    <img src={Logo} alt="Jearmy Jwellery" className="logo" />
+  </Link>
+  <p className="xxx">Jearmy Jwellery</p>
+  <button
+    type="button"
+    className="navbar-open-btn text-white"
+    onClick={() => setNavToggler(!navToggler)}
+  >
+    <FaBars size={30} />
+  </button>
 
             <div
               className={
