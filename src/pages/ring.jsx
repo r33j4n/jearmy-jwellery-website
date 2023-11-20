@@ -25,9 +25,6 @@ const Ring = () => {
             <h1>Rings</h1>
             <p>
             Discover timeless elegance and exquisite craftsmanship with our stunning collection of rings, designed to add a touch of brilliance to every moment.
-
-
-
             </p>
           </div>
         </div>
