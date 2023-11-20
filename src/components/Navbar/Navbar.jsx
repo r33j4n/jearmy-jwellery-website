@@ -66,7 +66,7 @@ const Navbar = () => {
                         </li>
                         <li>
                           <Link
-                            to="/jeellery/bracelets"
+                            to="/jwellery/bracelet"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
                           >
                             Bracelets
@@ -98,7 +98,7 @@ const Navbar = () => {
                         </li>
                         <li>
                           <Link
-                            to="/jwellery/earings"
+                            to="/jwellery/earing"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
                           >
                             Earings

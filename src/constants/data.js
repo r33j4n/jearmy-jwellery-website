@@ -155,57 +155,288 @@ const jewells = [
         name:"thaali",
         image: `${images.services_img_1}`,
         title: "Thaali",
-        price: "356821",
+        price: "1000",
     },
     {
         name:"chains",
         image: `${images.services_img_1}`,
         title: "Chains",
-        price: "356821"
+        price: "2000"
     },
     {
         name:"bracelet",
         image: `${images.services_img_2}`,
         title: "Bracelets",
-        price: "256821"
+        price: "3000"
     },
     {
         name:"aram",
         image: `${images.services_img_1}`,
         title: "Arams",
-        price: "356821"
+        price: "4000"
     },
     {
         name:"necklace",
         image: `${images.services_img_4}`,
         title: "Necklace",
-        price: "456821"
+        price: "5000"
     },
     {
         name:"earing",
         image: `${images.services_img_5}`,
         title: "Earings",
-        price: "156821"
+        price: "6000"
     },
     {
         name:"bangle",
         image: `${images.services_img_6}`,
         title: "Bangles",
-        price: "346821"
+        price: "7000"
     },
     {
         name:"ring",
         image: `${images.services_img_1}`,
         title: "Rings",
-        price: "356821"
+        price: "8000"
     },
 ];
 const thaalis =[
+    {
+        name:"kombuThali",
+        image: `${images.services_img_1}`,
+        title: "Kombu Thali",
+        price: "1001",
+
+    },
+    {
+        name:"pillayarThali",
+        image: `${images.services_img_1}`,
+        title: "Pillayar Thali",
+        price: "1002",
+
+    },
+    {
+        name:"LinagamThali",
+        image: `${images.services_img_1}`,
+        title: "Lingam Thali",
+        price: "1003",
+
+    },
+    {
+        name:"siraguThali",
+        image: `${images.services_img_1}`,
+        title: "Siragu Pillayar Thali",
+        price: "1004",
+
+    },
+    {
+        name:"ammanThali",
+        image: `${images.services_img_1}`,
+        title: "Amman Thali",
+        price: "1005",
+
+    },
+    {
+        name:"ramarThali",
+        image: `${images.services_img_1}`,
+        title: "Ramar Thali",
+        price: "1006",
+
+    },
+    {
+        name:"kombuThali",
+        image: `${images.services_img_1}`,
+        title: "Kombu Thali",
+        price: "1007",
+
+    },
+    {
+        name:"shivanAmmanThali",
+        image: `${images.services_img_1}`,
+        title: "Shivan Amman Thali",
+        price: "1008",
+
+    },
+    {
+        name:"shivamThali",
+        image: `${images.services_img_1}`,
+        title: "Shivan Thali",
+        price: "1009",
+
+    },
+    {
+        name:"potuThali",
+        image: `${images.services_img_1}`,
+        title: "Pottu Thali",
+        price: "1010",
+
+    },
+    {
+        name:"malayalaThali",
+        image: `${images.services_img_1}`,
+        title: "Malayala Thali 1",
+        price: "1011",
+
+    },
+    {
+        name:"malayalaThali2",
+        image: `${images.services_img_1}`,
+        title: "Malayala Thali 2",
+        price: "1012",
+
+    },
+    {
+        name:"malayalaThali3",
+        image: `${images.services_img_1}`,
+        title: "Malayala Thali 3",
+        price: "1013",
+
+    },
+    {
+        name:"sanhuThali",
+        image: `${images.services_img_1}`,
+        title: "Sangu Sakkaram Thali",
+        price: "1014",
+
+    },
+    {
+        name:"pattaiThali",
+        image: `${images.services_img_1}`,
+        title: "Pattai Thali",
+        price: "1015",
+
+    },
+    {
+        name:"christianThali",
+        image: `${images.services_img_1}`,
+        title: "Christian Thali 1",
+        price: "1016",
+
+    },
+    {
+        name:"christianThali2",
+        image: `${images.services_img_1}`,
+        title: "Christian Thali 2",
+        price: "1017",
+
+    },
+    {
+        name:"christianThali3",
+        image: `${images.services_img_1}`,
+        title: "Christian Thali 3",
+        price: "1018",
+
+    },
+    {
+        name:"christianThali4",
+        image: `${images.services_img_1}`,
+        title: "Christian Thali 4",
+        price: "1019",
+
+    },
+    {
+        name:" christianThali5",
+        image: `${images.services_img_1}`,
+        title: "Christian Thali 4",
+        price: "1020",
+
+    },
+
 
 ];
-const chains=[
-
+const chains = [
+    {
+        name: "Round Chain",
+        image: `${images.services_img_1}`,
+        title: "Round Chain",
+        price: "2001",
+    },
+    {
+        name: "Box Chain",
+        image: `${images.services_img_1}`,
+        title: "Box Chain",
+        price: "2002",
+    },
+    {
+        name: "TKC Chain",
+        image: `${images.services_img_1}`,
+        title: "TKC Chain",
+        price: "2003",
+    },
+    {
+        name: "TKC Cartier Chain",
+        image: `${images.services_img_1}`,
+        title: "TKC Cartier Chain",
+        price: "2004",
+    },
+    {
+        name: "Rope Chain",
+        image: `${images.services_img_1}`,
+        title: "Rope Chain",
+        price: "2005",
+    },
+    {
+        name: "Rope Cartier Chain",
+        image: `${images.services_img_1}`,
+        title: "Rope Cartier Chain",
+        price: "2006",
+    },
+    {
+        name: "Rope Tube Chain",
+        image: `${images.services_img_1}`,
+        title: "Rope Tube Chain",
+        price: "2007",
+    },
+    {
+        name: "MRT Chain",
+        image: `${images.services_img_1}`,
+        title: "MRT Chain",
+        price: "2008",
+    },
+    {
+        name: "Lotus Chain",
+        image: `${images.services_img_1}`,
+        title: "Lotus Chain",
+        price: "2009",
+    },
+    {
+        name: "Ice Cream Chain",
+        image: `${images.services_img_1}`,
+        title: "Ice Cream Chain",
+        price: "2010",
+    },
+    {
+        name: "Moppu Chain",
+        image: `${images.services_img_1}`,
+        title: "Moppu Chain",
+        price: "2011",
+    },
+    {
+        name: "Ball Chain",
+        image: `${images.services_img_1}`,
+        title: "Ball Chain",
+        price: "2012",
+    },
+    {
+        name: "BB Chain",
+        image: `${images.services_img_1}`,
+        title: "BB Chain",
+        price: "2013",
+    },
+    {
+        name: "Pearl Chain",
+        image: `${images.services_img_1}`,
+        title: "Pearl Chain",
+        price: "2014",
+    },
+    {
+        name: "Mangle Suthra Chain",
+        image: `${images.services_img_1}`,
+        title: "Mangle Suthra Chain",
+        price: "2015",
+    },
 ];
+
 const bracelets=[
 
 ];
