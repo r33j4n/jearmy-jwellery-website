@@ -7,13 +7,13 @@ import Black from "../assets/images/black.jpg";
 import { jewells } from "../constants/data";
 import Navbar from "../components/Navbar/Navbar";
 import bgImage from "../assets/images/coverup.jpeg";
-import bglite from "../assets/images/lightBG.jpeg";
+import bglite from "../assets/images/mra.avif";
 import Footer from "../components/Footer/Footer";
 
 const Jwellery = () => {
     const[pageNumber,setPageNumber]=useState(0);
 
-    const jewellsPerPage=6;
+    const jewellsPerPage=8;
     const pageVisited=pageNumber*jewellsPerPage;
     const pageCount=Math.ceil(jewells.length/jewellsPerPage);
 
@@ -37,7 +37,7 @@ const Jwellery = () => {
         
         
       </Parallax>
-    <Parallax bgImage={bgImage} strength={600}>
+    <Parallax bgImage={bglite} strength={600}>
          <section className="Collection top" id="Collection">
         <div className="c0">
         <div className="c">
@@ -62,7 +62,7 @@ const Jwellery = () => {
       
           </div>
           <br/>
-          <div>
+          {/* <div>
             <ReactPaginate 
               previousLabel={"previous"}
               nextLabel={"Next"}
@@ -74,7 +74,7 @@ const Jwellery = () => {
               disabledClassName={"paginationDisabled"}
               activeClassName={"paginationActive"}
             />
-            </div>
+            </div> */}
             <br/>
     </div>
       </section>

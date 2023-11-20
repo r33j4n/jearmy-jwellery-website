@@ -463,9 +463,63 @@ const bracelets=[
 const arams=[
 
 ];
-const necklaces=[
+// const necklaces = [
+//     {
+//       name: "Necklace Style 1",
+//       image: `${images.Necklace1}`,
+//       title: "Necklace Style 1",
+//       price: "5001",
+//     },
+//     {
+//       name: "Necklace Style 2",
+//       image: `${images.Necklace2}`,
+//       title: "Necklace Style 2",
+//       price: "5002",
+//     },
+//     // Continue the pattern for more necklace styles
+//     {
+//       name: "Necklace Style 3",
+//       image: `${images.Necklace3}`,
+//       title: "Necklace Style 3",
+//       price: "5003",
+//     },
+//     {
+//       name: "Necklace Style 4",
+//       image: `${images.Necklace4}`,
+//       title: "Necklace Style 4",
+//       price: "5004",
+//     },
+//     {
+//       name: "Necklace Style 5",
+//       image: `${images.Necklace5}`,
+//       title: "Necklace Style 5",
+//       price: "5005",
+//     },
+    
+const necklaces = [];
+  for (let i = 1; i <= 31; i++) {
+    const necklace = {
+      name: `Necklace Style ${i}`,
+      image: `${images['Necklace' + i]}`,
+      title: `Necklace Style ${i}`,
+      price: `${5000 + i}`,
+    };
 
-];
+    necklaces.push(necklace);
+  }
+const necklaceAarams = [];
+for (let i = 1; i <= 15; i++) {
+  const necklace = {
+    name: `Necklace Aarams ${i}`,
+    image: `${images['Necklace_Aaram' + i]}`, // Replace with your actual image paths
+    title: `Chains ${i}`,
+    price: `${2000 + i}`,
+  };
+
+  necklaceAarams.push(necklace);
+}
+
+
 const earings=[
 
 ];
@@ -476,4 +530,4 @@ const rings=[
 
 ];
 
-export {services, works,worksGallery ,  work_process, about_stats, testimonials, logos,jewells,thaalis,chains,bracelets,arams,necklaces,earings,bangles,rings};
+export {services, works,worksGallery ,  work_process, about_stats, testimonials, logos,jewells,thaalis,chains,bracelets,arams,necklaces,earings,bangles,rings,necklaceAarams};
