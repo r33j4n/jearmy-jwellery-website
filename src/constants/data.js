@@ -151,7 +151,7 @@ const testimonials = [
   },
   {
     name: "Thareejan P",
-    post: "ML Engineer",
+    post: "Entrepenur",
     paragraph:
       "I absolutely adore this jewelry shop; their stunning collection, exceptional customer service, and impeccable craftsmanship make it my go-to destination for all my jewelry needs.",
   },
