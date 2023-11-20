@@ -5,7 +5,7 @@ import Card from "../components/Card/Card";
 import { jewells, thaalis } from "../constants/data";
 import lightbg from "../assets/images/lightBG.jpeg";
 import Black from "../assets/images/mra.avif";
-
+import Footer from "../components/Footer/Footer";
 import Navbar from "../components/Navbar/Navbar";
 
 const Thaali = () => {
@@ -56,6 +56,7 @@ const Thaali = () => {
         </div>
       </section>
       </Parallax>
+      <Footer/>
     </div>
   );
 };

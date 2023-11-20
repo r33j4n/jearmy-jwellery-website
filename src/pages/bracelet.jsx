@@ -6,6 +6,7 @@ import Card from "../components/Card/Card";
 import Black from "../assets/images/mra.avif";
 import { jewells,bracelets } from "../constants/data";
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 
 const Bracelet = () => {
@@ -54,6 +55,7 @@ const Bracelet = () => {
         </div>
       </section>
       </Parallax>
+      <Footer/>
     </div>
   );
 };

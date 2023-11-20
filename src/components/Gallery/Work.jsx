@@ -6,6 +6,7 @@ import {ImCancelCircle} from "react-icons/im";
 import Aramx from '../../pages/aram copy';
 import Chainx from '../../pages/chainW';
 import Necklacex from '../../pages/necklace copy';
+import Footer from '../Footer/Footer';
 
 const Work = () => {
     const [imageModal, setImageModal] = useState(false);
@@ -55,6 +56,7 @@ const Work = () => {
             </div>
         </div>
     </div>
+    <Footer />
     </React.Fragment>
 
   )
