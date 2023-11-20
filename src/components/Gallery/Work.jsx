@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {works} from "../../constants/data";
+import {worksGallery} from "../../constants/data";
 import "./Work.css";
 import {BsPlusLg} from "react-icons/bs";
 import {ImCancelCircle} from "react-icons/im";
@@ -33,7 +33,7 @@ const Work = () => {
 
                 <div className='work-list grid'>
                     {
-                        works.map((work, index) => {
+                        worksGallery.map((work, index) => {
                             return (
                                 <div className='work-item text-center' key = {index} onClick = {() => setImageOnModal(work.image)}>
                                     <img src = {work.image} alt = "" />

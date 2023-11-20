@@ -53,6 +53,26 @@ const works = [
         image: `${images.work_img_6}`
     },
 ];
+const worksGallery = [
+    {
+        image: `${images.work_img_1}`
+    },
+    {
+        image: `${images.work_img_2}`
+    },
+    {
+        image: `${images.work_img_3}`
+    },
+    {
+        image: `${images.work_img_4}`
+    },
+    {
+        image: `${images.work_img_5}`
+    },
+    {
+        image: `${images.work_img_6}`
+    },
+];
 
 const work_process = [
     {
@@ -153,7 +173,7 @@ const logos = [
 const jewells = [
     {
         name:"thaali",
-        image: `${images.services_img_1}`,
+        image: `${images.KombuThali}`,
         title: "Thaali",
         price: "1000",
     },
@@ -456,4 +476,4 @@ const rings=[
 
 ];
 
-export {services, works,  work_process, about_stats, testimonials, logos,jewells,thaalis,chains,bracelets,arams,necklaces,earings,bangles,rings};
+export {services, works,worksGallery ,  work_process, about_stats, testimonials, logos,jewells,thaalis,chains,bracelets,arams,necklaces,earings,bangles,rings};
