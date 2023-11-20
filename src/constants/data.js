@@ -203,140 +203,140 @@ const jewells = [
 const thaalis =[
     {
         name:"kombuThali",
-        image: `${images.services_img_1}`,
+        image: `${images.KombuThali}`,
         title: "Kombu Thali",
         price: "1001",
 
     },
     {
         name:"pillayarThali",
-        image: `${images.services_img_1}`,
+        image: `${images.PillayarThali}`,
         title: "Pillayar Thali",
         price: "1002",
 
     },
     {
         name:"LinagamThali",
-        image: `${images.services_img_1}`,
+        image: `${images.LingamThali}`,
         title: "Lingam Thali",
         price: "1003",
 
     },
     {
         name:"siraguThali",
-        image: `${images.services_img_1}`,
+        image: `${images.SirakuPillayarThali}`,
         title: "Siragu Pillayar Thali",
         price: "1004",
 
     },
     {
         name:"ammanThali",
-        image: `${images.services_img_1}`,
+        image: `${images.AmmanThali}`,
         title: "Amman Thali",
         price: "1005",
 
     },
     {
         name:"ramarThali",
-        image: `${images.services_img_1}`,
+        image: `${images.RamarThali}`,
         title: "Ramar Thali",
         price: "1006",
 
     },
     {
         name:"kombuThali",
-        image: `${images.services_img_1}`,
+        image: `${images.KombuThali}`,
         title: "Kombu Thali",
         price: "1007",
 
     },
     {
         name:"shivanAmmanThali",
-        image: `${images.services_img_1}`,
+        image: `${images.ShivanAmmanThali}`,
         title: "Shivan Amman Thali",
         price: "1008",
 
     },
     {
         name:"shivamThali",
-        image: `${images.services_img_1}`,
+        image: `${images.ShivanThali}`,
         title: "Shivan Thali",
         price: "1009",
 
     },
     {
         name:"potuThali",
-        image: `${images.services_img_1}`,
+        image: `${images.PottuThali}`,
         title: "Pottu Thali",
         price: "1010",
 
     },
     {
         name:"malayalaThali",
-        image: `${images.services_img_1}`,
+        image: `${images.MalayalaThali1}`,
         title: "Malayala Thali 1",
         price: "1011",
 
     },
     {
         name:"malayalaThali2",
-        image: `${images.services_img_1}`,
+        image: `${images.MalayalaThali2}`,
         title: "Malayala Thali 2",
         price: "1012",
 
     },
     {
         name:"malayalaThali3",
-        image: `${images.services_img_1}`,
+        image: `${images.MalayalaThali2}`,
         title: "Malayala Thali 3",
         price: "1013",
 
     },
     {
         name:"sanhuThali",
-        image: `${images.services_img_1}`,
+        image: `${images.SanguSakkaramThali}`,
         title: "Sangu Sakkaram Thali",
         price: "1014",
 
     },
     {
         name:"pattaiThali",
-        image: `${images.services_img_1}`,
+        image: `${images.PattaiThali}`,
         title: "Pattai Thali",
         price: "1015",
 
     },
     {
         name:"christianThali",
-        image: `${images.services_img_1}`,
+        image: `${images.ChrisitianThali1}`,
         title: "Christian Thali 1",
         price: "1016",
 
     },
     {
         name:"christianThali2",
-        image: `${images.services_img_1}`,
+        image: `${images.ChrisitianThali2}`,
         title: "Christian Thali 2",
         price: "1017",
 
     },
     {
         name:"christianThali3",
-        image: `${images.services_img_1}`,
+        image: `${images.ChrisitianThali3}`,
         title: "Christian Thali 3",
         price: "1018",
 
     },
     {
         name:"christianThali4",
-        image: `${images.services_img_1}`,
+        image: `${images.ChrisitianThali4}`,
         title: "Christian Thali 4",
         price: "1019",
 
     },
     {
         name:" christianThali5",
-        image: `${images.services_img_1}`,
+        image: `${images.ChrisitianThali5}`,
         title: "Christian Thali 4",
         price: "1020",
 

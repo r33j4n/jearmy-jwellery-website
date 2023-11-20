@@ -29,6 +29,24 @@ import Coverup from "../assets/images/coverup.jpeg";
 import Background_Jewel from "../assets/images/ring.jpg";
 import bgImage from "../assets/images/jewellery_homepage_desktop.webp";
 import Ring from "../assets/images/wed.jpg";
+import AmmanThali from "../assets/images/AmmanThali.jpeg";
+import ChrisitianThali1 from "../assets/images/ChristianThali1.jpeg";
+import ChrisitianThali2 from "../assets/images/ChristianThali2.jpeg";
+import ChrisitianThali3 from "../assets/images/ChristianThali3.jpeg";
+import ChrisitianThali4 from "../assets/images/ChristianThali4.jpeg";
+import ChrisitianThali5 from "../assets/images/ChristianThali5.jpeg";
+import KombuThali from "../assets/images/KombuThali.jpeg";
+import LingamThali from "../assets/images/LingamThali.jpeg";
+import MalayalaThali1 from "../assets/images/MalayalaThali1.jpeg";
+import MalayalaThali2 from "../assets/images/MalayalaThali2.jpeg";
+import PattaiThali from "../assets/images/PattaiThali.jpeg";
+import PottuThali from "../assets/images/PottuThali.jpeg";
+import RamarThali from "../assets/images/RamarThali.jpeg";
+import SanguSakkaramThali from "../assets/images/SanguSakkaramThali.jpeg";
+import ShivanAmmanThali from "../assets/images/ShivanAmmanThali.jpeg";
+import ShivanThali from "../assets/images/ShivanThali.jpeg";
+import SirakuPillayarThali from "../assets/images/SiraguPillayarThali.jpeg";
+import PillayarThali from "../assets/images/PillayarThali.jpeg";
 
 
 import subscribe_background from "../assets/images/subscribe_background.jpeg";
@@ -44,5 +62,6 @@ const images = {
     About_Alex, subscribe_background,About_Shop,
     Background_Jewel
     ,bgImage,Ring
+    ,AmmanThali,ChrisitianThali1,ChrisitianThali2,ChrisitianThali3,ChrisitianThali4,ChrisitianThali5,KombuThali,LingamThali,MalayalaThali1,MalayalaThali2,PattaiThali,PottuThali,RamarThali,SanguSakkaramThali,ShivanAmmanThali,ShivanThali,SirakuPillayarThali,PillayarThali
 }
 export default images;
