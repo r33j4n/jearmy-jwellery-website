@@ -1,74 +1,63 @@
-import React,{useState} from "react";
-import { Parallax, Background } from "react-parallax";
-import ReactPaginate from "react-paginate";
+import React, { useState } from "react";
+import { Parallax } from "react-parallax";
 import "./jwellery.css";
 import Card from "../components/Card/Card";
 import Black from "../assets/images/black.jpg";
-import { jewells,bangles } from "../constants/data";
+import { bangles } from "../constants/data";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
+const Bangle = () => {
+  const [visibleItems, setVisibleItems] = useState(4); // Number of items initially visible
+  const [allItems] = useState(bangles);
 
-const Bangle= () => {
-    const[pageNumber,setPageNumber]=useState(0);
-
-    const jewellsPerPage=4;
-    const pageVisited=pageNumber*jewellsPerPage;
-    const pageCount=Math.ceil(jewells.length/jewellsPerPage);
-
-    const changePage =({selected})=>{
-         setPageNumber(selected)
-    };
+  const loadMore = () => {
+    setVisibleItems((prevVisibleItems) => prevVisibleItems + 4); // Increase the number of visible items
+  };
 
   return (
     <div>
+      {/* Parallax Header */}
       <Parallax bgImage={Black} strength={700}>
+        <Navbar />
         <div className="content">
           <div className="aboutx">
             <h1>Bangles</h1>
             <p>
-            Adorn your wrists with our exquisite bangle selection, where traditional artistry meets contemporary elegance.            </p>
+              Adorn your wrists with our exquisite bangle selection, where traditional artistry meets contemporary elegance.
+            </p>
           </div>
         </div>
       </Parallax>
-      <br/>
-      <section className="Collection top" id="Collection">
-        <div className="c0">
-        <div className="c">
-         
-            {jewells
-            .slice(pageVisited,pageVisited+jewellsPerPage)
-            .map((value, index) => {
-              return (
-                <div className="c1">
-                <Card
-                  key={index}
-                  image={value.image}
-                  title={value.title}
-                  price={value.price}
-                />
-                </div>
-              );
-            })}
 
-            <br/>
-      
-          </div>
-          <br/>
-          <div>
-            <ReactPaginate 
-              previousLabel={"previous"}
-              nextLabel={"Next"}
-              pageCount={pageCount}
-              onPageChange={changePage}
-              containerClassName={"paginationButtons"}
-              previousLinkClassName={"previousButton"}
-              nextLinkClassName={"nextButton"}
-              disabledClassName={"paginationDisabled"}
-              activeClassName={"paginationActive"}
-            />
+      {/* Collection Section */}
+      <Parallax bgImage={Black} strength={700}>
+        <section className="Collection top" id="Collection">
+          <div className="c0">
+            <div className="c">
+              {allItems.slice(0, visibleItems).map((value, index) => (
+                <div className="c1" key={index}>
+                  <Card
+                    key={index}
+                    image={value.image}
+                    title={value.title}
+                    price={value.price}
+                  />
+                </div>
+              ))}
+              <br />
+              {visibleItems < allItems.length && (
+                <button className="loadMoreButton" onClick={loadMore}>
+                  Load More
+                </button>
+              )}
             </div>
-            <br/>
-    </div>
-      </section>
+            <br />
+          </div>
+        </section>
+      </Parallax>
+
+      <Footer />
     </div>
   );
 };

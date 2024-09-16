@@ -7,6 +7,7 @@ import Black from "../assets/images/black.jpg";
 import blue from "../assets/images/mra.avif";
 import { jewells, thaalis,chains,necklaceAarams } from "../constants/data";
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 const Chain = () => {
   const [visibleItems, setVisibleItems] = useState(4); // Number of items initially visible
@@ -56,6 +57,7 @@ const Chain = () => {
         </div>
       </section>
       </Parallax>
+      <Footer/>
     </div>
   );
 };

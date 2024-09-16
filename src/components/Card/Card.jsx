@@ -1,21 +1,18 @@
-import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
-import { Link } from "react-router-dom";
+import React from "react";
 import "./Card.css";
 
 const Card = (props) => {
-  
   return (
     <div className="box btn_shadow">
-      <div className="img">
-        <img src={props.image}/>
+      <div className="img-wrapper">
+        {/* Lazy loading the image */}
+        <img src={props.image} alt={props.title} loading="lazy" className="img"/>
       </div>
-      <div className="category1 d_flex">
-        <p>{props.title}</p>
-        <h2>{props.price}</h2>
+      <div className="category1">
+        <h2>{props.title}</h2>
+        <p>{props.price}</p>
       </div>
     </div>
-      );
+  );
 };
-
 export default Card;

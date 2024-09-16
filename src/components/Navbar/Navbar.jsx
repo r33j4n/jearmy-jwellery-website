@@ -1,16 +1,22 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Logo from "../../assets/images/logo.png";
 
 const Navbar = () => {
   const [navToggler, setNavToggler] = useState(false);
   const [showCategories, setShowCategories] = useState(false);
-  const closeNavbar = () => setNavToggler(false);
+  const navigate = useNavigate(); // useNavigate for redirection
 
-  const toggleCategories = () => {
-    setShowCategories(!showCategories);
+  const closeNavbar = () => setNavToggler(false);
+  const toggleCategories = () => setShowCategories(!showCategories);
+
+  const handleScrollTo = (scrollTo) => {
+    closeNavbar();
+    // Redirect to the home page and include the scrollTo query
+    navigate(`/?scrollTo=${scrollTo}`);
   };
 
   return (
@@ -18,17 +24,19 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-content">
           <div className="brand-and-toggler flex flex-sb">
-          <Link to="/" className="navbar-brand">
-    <img src={Logo} alt="Jearmy Jwellery" className="logo" />
-  </Link>
-  <p className="xxx">Jearmy Jwellery</p>
-  <button
-    type="button"
-    className="navbar-open-btn text-white"
-    onClick={() => setNavToggler(!navToggler)}
-  >
-    <FaBars size={30} />
-  </button>
+            <RouterLink to="/" className="navbar-brand">
+              <img src={Logo} alt="Jearmy Jewellery" className="logo" />
+            </RouterLink>
+            <RouterLink to="/" className="navbar-brand">
+              <p className="xxx">Jearmy Jewellery</p>
+            </RouterLink>
+            <button
+              type="button"
+              className="navbar-open-btn text-white"
+              onClick={() => setNavToggler(!navToggler)}
+            >
+              <FaBars size={30} />
+            </button>
 
             <div
               className={
@@ -45,113 +53,127 @@ const Navbar = () => {
                 <FaTimes size={30} />
               </button>
               <ul className="navbar-nav">
+                {/* All Collections */}
                 <li className="nav-item">
-                  <Link
-                    to="/jwellery"
+                  <RouterLink
+                    to="/?scrollTo=allcollection"
                     className="nav-link text-white ls-1 text-uppercase fw-6 fs-22"
+                    onClick={() => handleScrollTo("allcollection")}
                   >
                     All Collections
-                  </Link>
+                  </RouterLink>
                 </li>
+
+                {/* Jewelry dropdown */}
                 <li className="nav-item dropdown">
                   <button
                     className="nav-link text-white ls-1 text-uppercase fw-6 fs-22"
                     onClick={toggleCategories}
                   >
-                    Jwellery
+                    Jewelry
                   </button>
                   {showCategories && (
                     <div className="dropdown-content">
                       <ul>
                         <li>
-                          <Link
+                          <RouterLink
                             to="/jwellery/thaali"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
+                            onClick={closeNavbar}
                           >
                             Thaali
-                          </Link>
+                          </RouterLink>
                         </li>
                         <li>
-                          <Link
-                            to="/jwellery/aram"
+                          <RouterLink
+                            to="/jwellery/aarams"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
+                            onClick={closeNavbar}
                           >
                             Arams
-                          </Link>
+                          </RouterLink>
                         </li>
                         <li>
-                          <Link
+                          <RouterLink
                             to="/jwellery/necklace"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
+                            onClick={closeNavbar}
                           >
                             Necklaces
-                          </Link>
+                          </RouterLink>
                         </li>
                         <li>
-                          <Link
+                          <RouterLink
                             to="/jwellery/chains"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
+                            onClick={closeNavbar}
                           >
                             Chains
-                          </Link>
+                          </RouterLink>
                         </li>
                         <li>
-                          <Link
-                            to="/jwellery/bracelet"
+                          <RouterLink
+                            to="/jwellery/bracelets"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
+                            onClick={closeNavbar}
                           >
                             Bracelets
-                          </Link>
+                          </RouterLink>
                         </li>
-
                         <li>
-                          <Link
-                            to="/jwellery/ring"
+                          <RouterLink
+                            to="/jwellery/rings"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
+                            onClick={closeNavbar}
                           >
                             Rings
-                          </Link>
+                          </RouterLink>
                         </li>
                         <li>
-                          <Link
-                            to="/jwellery/earing"
+                          <RouterLink
+                            to="/jwellery/earings"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
+                            onClick={closeNavbar}
                           >
-                            Earings
-                          </Link>
+                            Earrings
+                          </RouterLink>
                         </li>
                       </ul>
                     </div>
                   )}
                 </li>
-                {/* <li className="nav-item">
-                  <Link to="/jwellery" className="nav-link text-white ls-1 text-uppercase fw-6 fs-22">
-                    Collections
-                  </Link>
-                </li> */}
+
+                {/* Gallery */}
                 <li className="nav-item">
-                  <Link
-                    to="/gallery"
+                  <RouterLink
+                    to="/?scrollTo=gallery"
                     className="nav-link text-white ls-1 text-uppercase fw-6 fs-22"
+                    onClick={() => handleScrollTo("gallery")}
                   >
                     Gallery
-                  </Link>
+                  </RouterLink>
                 </li>
+
+                {/* About */}
                 <li className="nav-item">
-                  <Link
-                    to="/about"
+                  <RouterLink
+                    to="/?scrollTo=about"
                     className="nav-link text-white ls-1 text-uppercase fw-6 fs-22"
+                    onClick={() => handleScrollTo("about")}
                   >
                     About
-                  </Link>
+                  </RouterLink>
                 </li>
+
+                {/* Contact */}
                 <li className="nav-item">
-                  <Link
-                    to="/contact"
+                  <RouterLink
+                    to="/?scrollTo=contact"
                     className="nav-link text-white ls-1 text-uppercase fw-6 fs-22"
+                    onClick={() => handleScrollTo("contact")}
                   >
                     Contact
-                  </Link>
+                  </RouterLink>
                 </li>
               </ul>
             </div>

@@ -8,6 +8,24 @@ const services = [
       " Unleash the allure of gold chains, an emblem of sophistication, style, and eternal elegance.",
   },
   {
+    image: `${images.AmmanThali}`,
+    title: "Thaali",
+    paragraph:
+      " Discover the cultural significance and exquisite craftsmanship of our enchanting thaali collection, beautifully blending tradition with timeless elegance.",
+  },
+  {
+    image: `${images.Necklace_Aaram1}`,
+    title: "Aarams",
+    paragraph:
+      "Discover the beauty of tradition with our intricately designed arams, each piece reflecting the rich heritage and craftsmanship of our culture.",
+  },
+  {
+    image: `${images.services_img_4}`,
+    title: "Necklace",
+    paragraph:
+      "Draping your neckline with a golden embrace, our necklaces epitomize eternal elegance, seamlessly blending tradition with contemporary allure.",
+  },
+  {
     image: `${images.services_img_2}`,
     title: "Bracelets",
     paragraph:
@@ -18,12 +36,6 @@ const services = [
     title: "Rings",
     paragraph:
       "Embrace the everlasting elegance of gold rings, where each piece whispers tales of love and luxury, adorning your fingers with refined charm.",
-  },
-  {
-    image: `${images.services_img_4}`,
-    title: "Necklace",
-    paragraph:
-      "Draping your neckline with a golden embrace, our necklaces epitomize eternal elegance, seamlessly blending tradition with contemporary allure.",
   },
   {
     image: `${images.services_img_5}`,
@@ -165,16 +177,16 @@ const testimonials = [
 
 const logos = [
   {
-    image: `${images.logo_img_1}`,
-  },
-  {
-    image: `${images.logo_img_2}`,
+    // image: `${images.logo_img_1}`,
   },
   {
     image: `${images.logo_img_3}`,
   },
   {
-    image: `${images.logo_img_4}`,
+    image: `${images.logo_img_3}`,
+  },
+  {
+    // image: `${images.logo_img_4}`,
   },
   {
     image: `${images.test_img_5}`,

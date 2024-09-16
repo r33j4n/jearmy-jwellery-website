@@ -1,40 +1,41 @@
-.about .section-title{
-    padding-top: 20px;
-    margin-top: 15px;
-}
-.about-grid,
-.about-img,
-.about-grid .section-title .text{
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.about-item-icon{
-    margin-right: 24px;
-}
-.about-item-icon img{
-    width: 40px;
-}
-.about-item-text h3{
-    margin-bottom: 0;
-    font-weight: 500;
-}
-.about-item-text .text{
-    font-weight: 400;
-}
-.about-grid:nth-child(2){
-    padding: 50px 0;
-    row-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.about-video{
+/* Section title animation */
+.animated-title h3 {
+    font-size: 2.5rem;
+    color: #b09a68; /* Updated color */
+    font-weight: 700;
     position: relative;
-}
-.about-video video{
-    width: 100%;
-}
-.vidPlayBtn{
+    text-align: center;
+    animation: fadeInUp 1.5s ease-in-out;
+  }
+  
+  .animated-title h3::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    background-color: #b09a68; /* Updated color */
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .animated-text p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+    margin-top: 1rem;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  /* Image Animation */
+  .animated-image {
+    animation: zoomIn 1.5s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Play Button for Video */
+  .vidPlayBtn {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -42,49 +43,102 @@
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-@media screen and (min-width: 992px){
-    .about-grid:nth-child(1),
-    .about-grid:nth-child(2),
-    .about-grid:nth-child(3){
-        max-width: 100%;
-    }
-
-    .about-grid:nth-child(1),
-    .about-grid:nth-child(3){
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 80px;
-    }
-    .about-grid:nth-child(1) .section-title{
-        text-align: left;
-    }
-    .about-grid:nth-child(3) .section-title{
-        text-align: right;
-    }
-    .about-grid:nth-child(3){
-        margin-top: 40px;
-    }
-    .about-grid:nth-child(2){
-        grid-template-columns: repeat(4, 1fr);
-        margin-top: 30px;
-        column-gap: 20px;
-    }
-   
-}
-
-.set-align{
-    
-    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
     display: flex;
-  /* justify-content:center; */
-
-}
-.gaps{
-    padding-top: 10px;
-}
-.parent-container {
-    
+    align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .vidPlayBtn:hover {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+  
+  .play-icon {
+    color: #b09a68; /* Updated color */
+  }
+  
+  .about-video-element {
+    width: 100%;
+    border-radius: 10px;
+    display: none;
+  }
+  
+  .about-video video.active {
+    display: block;
+  }
+  
+  /* Section Grid Styling */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-top: 30px;
+  }
+  
+  @media screen and (min-width: 992px) {
+    .about-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 80px;
+    }
+  
+    .about-video {
+      position: relative;
+    }
+  }
+  
+  /* Video Styling */
+  .about-video {
+    position: relative;
+  }
+  
+  .about-video-element {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Explore Section Styling */
+  .explore-section .animated-title h3 {
+    text-align: left;
+    font-size: 2rem;
+  }
+  
+  .explore-section .animated-text {
+    font-size: 1.2rem;
+    color: #333;
   }

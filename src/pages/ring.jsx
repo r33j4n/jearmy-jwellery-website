@@ -6,6 +6,7 @@ import Card from "../components/Card/Card";
 import Black from "../assets/images/mra.avif";
 import { jewells,rings } from "../constants/data";
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 
 const Ring = () => {
@@ -54,6 +55,7 @@ const Ring = () => {
         </div>
       </section>
       </Parallax>
+      <Footer/>
     </div>
   );
 };

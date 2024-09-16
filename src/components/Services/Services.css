@@ -1,29 +1,105 @@
-.services-list{
+/* General styling for services list */
+.services-list {
     row-gap: 2rem;
-}
-.services-item{
-    padding: 2.4rem;
-}
-.services-item-img{
-    margin-bottom: 0.8rem;
-}
-.services-item-img img{
-    width: 80px;
-}
-.services-item-text .text{
-    max-width: 460px;
+    padding-top: 2rem;
+    display: grid;
+    gap: 3rem;
 }
 
-@media screen and (min-width: 768px){
-    .services-list{
+/* Individual services items */
+.services-item {
+    padding: 2.4rem;
+    border-radius: 15px;
+    background-color: #f5f5f5; /* Light background for contrast */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+
+.services-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+    background: linear-gradient(135deg, #ffffff, #f1f1f1); /* Gradient on hover */
+}
+
+/* Image styling */
+.services-item-img {
+    margin-bottom: 1.2rem;
+}
+
+.services-item-img img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%; /* Circular images for elegance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.services-item:hover .services-item-img img {
+    transform: scale(1.1); /* Zoom effect on image hover */
+}
+
+/* Text styling */
+.services-item-text h4 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.services-item-text p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+/* Button styling for each service */
+.btn-service {
+    background-color: var(--brown-color);
+    color: #fff;
+    padding: 0.8rem 1.6rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-service:hover {
+    background-color: var(--dark-color); /* Darker on hover */
+}
+
+.services-link {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+}
+
+/* Responsive grid for services */
+@media screen and (min-width: 768px) {
+    .services-list {
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
+        gap: 2.5rem;
     }
 }
 
-
-@media screen and (min-width: 992px){
-    .services-list{
+@media screen and (min-width: 992px) {
+    .services-list {
         grid-template-columns: repeat(3, 1fr);
     }
 }

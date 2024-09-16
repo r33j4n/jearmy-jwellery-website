@@ -1,6 +1,12 @@
 .navbar{
-    padding: 3rem 0;
+    padding: 1rem 0;
     width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust the color and opacity as needed */
+    transition: background-color 0.3s ease;
 }
 .navbar-brand {
     display: flex;
@@ -62,6 +68,13 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .navbar-collapse {
+        top: 0;
+        padding-top: 5rem;
+    }
+}
+
 @media screen and (min-width: 992px){
     .navbar-collapse{
         transform: translateX(0);
@@ -98,4 +111,9 @@
 }
 .xxx{
     color: white;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.6); /* Darker background when scrolled */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }

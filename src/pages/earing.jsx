@@ -6,6 +6,7 @@ import Card from "../components/Card/Card";
 import Black from "../assets/images/mra.avif";
 import { jewells,earings } from "../constants/data";
 import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 
 const Earing = () => {
@@ -54,6 +55,7 @@ const Earing = () => {
         </div>
       </section>
       </Parallax>
+      <Footer/>
     </div>
   );
 };
