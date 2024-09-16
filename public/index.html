@@ -4,32 +4,89 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    
+    <!-- Primary Meta Tags for SEO -->
+    <title>Jearmy Jewellery | Authentic Traditional Jewellery in Sydney</title>
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Jearmy Jewellery is the best jewellery shop in Sydney, Australia, specializing in authentic traditional jewellery. Explore our wide range of rings, bangles, necklaces, and more."
     />
+    <meta name="keywords" content="jewellery, Sydney jewellery shop, traditional jewellery, bangles, rings, necklaces, Sydney, Australia" />
+    <meta name="author" content="Jearmy Jewellery" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#b09a68" />
+
+    <!-- Open Graph / Facebook Meta Tags for Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Jearmy Jewellery | Authentic Traditional Jewellery in Sydney" />
+    <meta
+      property="og:description"
+      content="Discover timeless, authentic traditional jewellery at Jearmy Jewellery in Sydney, Australia. The best collection of bangles, rings, necklaces, and more."
+    />
+    <meta property="og:image" content="https://www.jearmyjwellery.com/images/social-share.jpg" /> <!-- Example image -->
+    <meta property="og:url" content="https://www.jearmyjwellery.com" />
+    <meta property="og:site_name" content="Jearmy Jewellery" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jearmy Jewellery | Authentic Traditional Jewellery in Sydney" />
+    <meta
+      name="twitter:description"
+      content="Visit Jearmy Jewellery, the best jewellery shop in Sydney, Australia, specializing in authentic traditional designs."
+    />
+    <meta name="twitter:image" content="https://www.jearmyjwellery.com/images/social-share.jpg" />
+
+    <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+
+    <!-- Manifest for Progressive Web App (optional) -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-   
-    <title>Jearmy Jewellery | Authentic Traditional Jewellery in Sydney</title>
+
+    <!-- Schema.org Markup for SEO (JewelryStore) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "JewelryStore",
+        "name": "Jearmy Jewellery",
+        "image": "https://www.jearmyjwellery.com/wp-content/uploads/2023/06/vogue-logo-header-1.png",
+        "@id": "https://www.jearmyjwellery.com",
+        "url": "https://www.jearmyjwellery.com",
+        "telephone": "+61413593119",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "106A Pendle Way",
+          "addressLocality": "Pendle Hill",
+          "addressRegion": "NSW",
+          "postalCode": "2145",
+          "addressCountry": "AU"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -33.8068,
+          "longitude": 150.9558
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "10:00",
+          "closes": "19:00"
+        },
+        "sameAs": [
+          "https://www.facebook.com/jearmyjewellery",
+          "https://www.instagram.com/jearmyjewellery"
+        ]
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
