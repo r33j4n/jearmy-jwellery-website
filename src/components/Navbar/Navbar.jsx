@@ -86,11 +86,11 @@ const Navbar = () => {
                         </li>
                         <li>
                           <RouterLink
-                            to="/jwellery/aarams"
+                            to="/jwellery/harams"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
                             onClick={closeNavbar}
                           >
-                            Arams
+                            Harams
                           </RouterLink>
                         </li>
                         <li>

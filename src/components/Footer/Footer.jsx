@@ -7,17 +7,17 @@ const Footer = () => {
     <div className='footer bg-dark section-p' id = "footer">
         <div className='container'>
             <div className='section-title'>
-                <h3 className='text-brown'>Jearmy <span className='text-white'>Jwellery</span></h3>
+                <h3 className='text-brown'>Jearmy <span className='text-white'>Jwellery</span> PTY <span className='text-white'>LTD</span></h3>
             </div>
             <div className='footer-content'>
                 <ul className='footer-social-links flex flex-c'>
                     <li>
-                        <a href = "https://facebook.com/profile.php?id=100063703264832" className='text-white'>
+                        <a href = "https://facebook.com/profile.php?id=100063703264832" className='text-white' target="_blank" rel="noopener noreferrer">
                             <FaFacebookF />
                         </a>
                     </li>
                     <li>
-                        <a href = "/" className='text-white'>
+                        <a href = "https://www.instagram.com/jearmyjewellery?igsh=YzljYTk1ODg3Zg==" className='text-white' target="_blank" rel="noopener noreferrer">
                             <FaInstagram />
                         </a>
                     </li>
@@ -28,7 +28,7 @@ const Footer = () => {
                         </a>
                     </li>
                     <li>
-                        <a href = "/" className='text-white'>
+                        <a href = "https://wa.me/61413593119" className='text-white' target="_blank" rel="noopener noreferrer">
                             <FaWhatsapp />
                         </a>
                     </li>

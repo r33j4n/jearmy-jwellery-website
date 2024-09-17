@@ -50,11 +50,11 @@ const About = () => {
 
           {/* Explore Us Section */}
           <div className="about-grid grid explore-section">
-            <div className="section-title animated-title">
+            <div className="section-title animated-title1">
               <h3 className="text-gold">
                 Explore <span className="text-dark">Us</span>
               </h3>
-              <p className="text mx-auto">
+              <p className="text1 mx-auto">
                 Explore our Dazzling Collection of Exquisite Silver and Gold
                 Jewelry and Accessories. Embrace luxury and craftsmanship that
                 transcends trends, and let our jewelry become a reflection of

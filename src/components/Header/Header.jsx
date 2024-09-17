@@ -12,7 +12,7 @@ const Header = () => {
         <div className='header-content'>
           <h2 className='text-uppercase text-white op-07 fw-6 ls-2'></h2>
           <h1 className='text-white fw-6 header-title'>
-            Jearmy<span className='text-brown'>Jwellery</span>
+            Jearmy<span className='text-brown'>  Jewellery</span>
           </h1>
           <p className='text-white fw-2 header-title'>
             Highclass craftsmanship which you have always deserved

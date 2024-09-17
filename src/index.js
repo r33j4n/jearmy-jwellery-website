@@ -29,7 +29,7 @@ root.render(
       <Route path="/jwellery/chains" element={<Chain/>}></Route>
       <Route path="/jwellery/thaali" element={<Thaali/>}></Route>
       <Route path="/jwellery/bracelets" element={<Bracelet/>}></Route>
-      <Route path="/jwellery/aarams" element={<Aram/>}></Route>
+      <Route path="/jwellery/harams" element={<Aram/>}></Route>
       <Route path="/jwellery/necklace" element={<Necklace/>}></Route>
       <Route path="/jwellery/earings" element={<Earing/>}></Route>
       <Route path="/jwellery/bangles" element={<Bangle/>}></Route>

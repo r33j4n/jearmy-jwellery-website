@@ -5,13 +5,13 @@ import "./jwellery.css";
 import Card from "../components/Card/Card";
 import Black from "../assets/images/black.jpg";
 import blue from "../assets/images/mra.avif";
-import { jewells, thaalis,chains,necklaceAarams } from "../constants/data";
+import { jewells, thaalis,chains,necklaceHarams } from "../constants/data";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
 
 const Chain = () => {
   const [visibleItems, setVisibleItems] = useState(4); // Number of items initially visible
-  const [allItems, setAllItems] = useState(necklaceAarams);
+  const [allItems, setAllItems] = useState(necklaceHarams);
 
   const loadMore = () => {
     setVisibleItems((prevVisibleItems) => prevVisibleItems + 4); // Increase the number of visible items

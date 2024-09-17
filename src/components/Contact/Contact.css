@@ -1,4 +1,4 @@
-/* General contact section styles */
+/* Contact section styles */
 .contact {
     padding: 60px 0;
     background-color: #f9f9f9;
@@ -10,170 +10,135 @@
 }
 
 .contact .contact-title h3 {
-    font-size: 2.5rem;
+    font-size: 3rem; /* Increased from 2.5rem to 3rem */
     color: #b09a68;
     font-weight: 700;
-    position: relative;
     animation: fadeInUp 1.5s ease-in-out;
-}
-
-.contact .contact-title h3 span {
-    color: #333;
 }
 
 .contact .contact-description {
     margin-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1.8rem; /* Increased from 1.5rem to 1.8rem */
     color: #666;
     text-align: center;
-    animation: fadeIn 2s ease-in-out;
 }
 
-/* About Stats Grid */
+/* Grid layout with 1 row per section */
 .contact .about-grid {
-    display: grid;
-    grid-template-columns: 1fr; /* One card per row */
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 600px; /* Constrain width on larger screens */
+    gap: 25px; /* Slightly increased gap between sections */
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .contact .about-item {
     background-color: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: center;
-    width: 100%; /* Ensure card takes full width of the grid column */
-    max-width: 600px; /* Constrain card size */
-    margin: 0 auto; /* Center the cards horizontally */
-    box-sizing: border-box; /* Ensure consistent padding and sizing */
-}
-
-.contact .about-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
-.contact .about-item-icon {
-    margin-bottom: 15px;
+    width: 100%;
+    max-width: 700px;
     display: flex;
+    align-items: center;
     justify-content: center;
+    gap: 20px;
+    text-align: center;
 }
 
 .contact .about-item-icon img {
-    width: 40px;
+    width: 50px;
 }
 
 .contact .about-item-text h3 {
-    margin-bottom: 0;
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #333;
+    font-weight: 600;
 }
 
 .contact .about-item-text p {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #777;
+    margin-top: 5px;
 }
 
-/* Contact Form Styling (if enabled) */
-.contact .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
-    margin-top: 40px;
+.contact .about-item-text a {
+    font-size: 1.2rem;
+    color: #b09a68;
+    text-decoration: none;
+    padding: 5px 10px;
 }
 
-.contact .contact-form .form-control {
-    width: 100%;
-    background-color: transparent;
-    border: 1px solid #ddd;
-    border-radius: 35px;
-    min-height: 66px;
-    font-size: 20px;
-    padding: 0 20px;
-    margin-bottom: 20px;
-    transition: border-color 0.3s ease;
+.contact .about-item-text a:hover {
+    text-decoration: underline;
 }
 
-.contact .contact-form .form-control:focus {
-    border-color: #b09a68;
-    outline: none;
+/* Phone list styles */
+.phone-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between phone items */
 }
 
-.contact .contact-form textarea.form-control {
-    resize: none;
-    height: 100px;
+.phone-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
-.contact .contact-form .submit-btn {
-    width: 100%;
-    height: 66px;
-    background-color: #b09a68;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 35px;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+/* Button styles */
+.get-directions-button, .whatsapp-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #b09a68; /* Gold-like background */
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
 }
 
-.contact .contact-form .submit-btn:hover {
-    background-color: #8b7e5b;
+.get-directions-button:hover, .whatsapp-button:hover {
+    background-color: #8b7e5b; /* Darker shade of the button color on hover */
+    color: #ffffff;
+}
+
+.get-directions-button, .whatsapp-button {
+    color: #ffffff !important; /* Force white text */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
     .contact .about-grid {
-        grid-template-columns: 1fr; /* Ensure one card per row on all screen sizes */
+        flex-direction: column;
     }
 
-    .contact .contact-title h3 {
-        font-size: 28px;
+    .contact .about-item {
+        flex-direction: column;
+    }
+
+    .contact .about-item-text h3 {
+        font-size: 1.6rem;
+    }
+
+    .contact .about-item-text p {
+        font-size: 1.1rem;
     }
 }
 
 @media (max-width: 480px) {
     .contact .about-item-text h3 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
 
     .contact .about-item-text p {
         font-size: 1rem;
     }
 
-    .contact .contact-form .form-control {
-        font-size: 16px;
-        padding: 0 15px;
-        min-height: 56px;
-    }
-
-    .contact .contact-form .submit-btn {
-        height: 56px;
-        font-size: 18px;
-    }
-}
-
-/* Keyframe Animations */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
+    .get-directions-button, .whatsapp-button {
+        padding: 8px 15px;
+        font-size: 1rem;
     }
 }

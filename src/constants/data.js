@@ -14,8 +14,8 @@ const services = [
       " Discover the cultural significance and exquisite craftsmanship of our enchanting thaali collection, beautifully blending tradition with timeless elegance.",
   },
   {
-    image: `${images.Necklace_Aaram1}`,
-    title: "Aarams",
+    image: `${images.Necklace_Haram1}`,
+    title: "Harams",
     paragraph:
       "Discover the beauty of tradition with our intricately designed arams, each piece reflecting the rich heritage and craftsmanship of our culture.",
   },
@@ -96,22 +96,32 @@ const work_process = [
   {
     title: "Latest and Traditional Design",
     paragraph:
-      "Discover our Exquisite Collection of Latest and Traditional Design Jewelry, where timeless elegance meets contemporary style",
+      "Discover our Exquisite Collection of Latest and Traditional Design Jewelry, where timeless elegance meets contemporary style.",
   },
   {
-    title: "Genuine 22kt Gold Jwellery",
+    title: "Genuine 22kt Gold Jewelry",
     paragraph:
       "Radiate Timeless Brilliance with our Collection of Genuine 22kt Gold Jewelry, where craftsmanship and purity unite to adorn you with unmatched beauty.",
   },
   {
-    title: "Silver Jwellery",
+    title: "Silver Jewelry",
     paragraph:
-      "Enhance Your Look with the Shimmering Beauty of Silver Jewelry, as our stunning collection brings you classic sophistication and a contemporary touch to elevate your style",
+      "Enhance Your Look with the Shimmering Beauty of Silver Jewelry, as our stunning collection brings you classic sophistication and a contemporary touch to elevate your style.",
   },
   {
     title: "Polishes and Repairs",
     paragraph:
-      "Revitalize and Restore Your Treasured Jewelry with our Expert Polishing and Repair Services, ensuring they regain their brilliance and stand the test of time",
+      "Revitalize and Restore Your Treasured Jewelry with our Expert Polishing and Repair Services, ensuring they regain their brilliance and stand the test of time.",
+  },
+  {
+    title: "Diamond Rings, Earrings, and Necklaces",
+    paragraph:
+      "Explore our Luxurious Selection of Diamond Rings, Earrings, and Necklaces, each piece crafted to perfection to bring you elegance and sparkle for every occasion.",
+  },
+  {
+    title: "Pawning Brokers",
+    paragraph:
+      "Trust in Our Pawning Broker Services for a Secure and Transparent Process, offering you flexible options for short-term financial needs backed by your valuable assets.",
   },
 ];
 
@@ -173,6 +183,18 @@ const testimonials = [
     paragraph:
       "This jewelry shop never fails to amaze me with their breathtaking designs, top-notch quality, and impeccable attention to detail.",
   },
+  {
+    name: "Viji Shankar ",
+    post: "Local Guide ",
+    paragraph:
+      "This is one of the best jewellery shops in Sydney.  Excellent selection of items at reasonable prices and excellent customer service.",
+  },
+  {
+    name: "Malathi Ponniah",
+    post: "Customer ",
+    paragraph:
+      "Best collection good customer service",
+  },
 ];
 
 const logos = [
@@ -204,7 +226,7 @@ const jewells = [
   },
   {
     name: "chains",
-    image: `${images.Aaram1}`,
+    image: `${images.Haram1}`,
     title: "Chains",
     price: "2000",
   },
@@ -216,7 +238,7 @@ const jewells = [
   },
   {
     name: "aram",
-    image: `${images.Aaram5}`,
+    image: `${images.Haram5}`,
     title: "Arams",
     price: "4000",
   },
@@ -464,9 +486,9 @@ const bracelets = [];
 const arams = [];
 for (let i = 1; i <= 20; i++) {
   const aram = {
-    name: `Aaram${i}`,
-    image: `${images["Aaram" + i]}`, // Replace with your actual image paths
-    title: `Aaram${i}`,
+    name: `Haram${i}`,
+    image: `${images["Haram" + i]}`, // Replace with your actual image paths
+    title: `Haram${i}`,
     price: `${4000 + i}`,
   };
 
@@ -516,16 +538,16 @@ for (let i = 1; i <= 31; i++) {
 
   necklaces.push(necklace);
 }
-const necklaceAarams = [];
+const necklaceHarams = [];
 for (let i = 1; i <= 15; i++) {
   const necklace = {
-    name: `Necklace Aarams ${i}`,
-    image: `${images["Necklace_Aaram" + i]}`, // Replace with your actual image paths
+    name: `Necklace Harams ${i}`,
+    image: `${images["Necklace_Haram" + i]}`, // Replace with your actual image paths
     title: `Chains ${i}`,
     price: `${2000 + i}`,
   };
 
-  necklaceAarams.push(necklace);
+  necklaceHarams.push(necklace);
 }
 
 const earings = [];
@@ -549,5 +571,5 @@ export {
   earings,
   bangles,
   rings,
-  necklaceAarams,
+  necklaceHarams,
 };
