@@ -24,10 +24,12 @@ const Navbar = () => {
       <div className="container">
         <div className="navbar-content">
           <div className="brand-and-toggler flex flex-sb">
-            <RouterLink to="/" className="navbar-brand">
+            <RouterLink to="/?scrollTo=home" className="navbar-brand"
+                  onClick={() => handleScrollTo("home")}>
               <img src={Logo} alt="Jearmy Jewellery" className="logo" />
             </RouterLink>
-            <RouterLink to="/" className="navbar-brand">
+            <RouterLink to="/?scrollTo=home" className="navbar-brand"
+                  onClick={() => handleScrollTo("home")}>
               <p className="xxx">Jearmy Jewellery</p>
             </RouterLink>
             <button

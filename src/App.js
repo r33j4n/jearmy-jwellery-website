@@ -80,7 +80,9 @@ function App() {
           `}
         </script>
       </Helmet>
+      <Element name="home">
       <Header />
+      </Element>
       <Element name="allcollection">
         <Services />
       </Element>
