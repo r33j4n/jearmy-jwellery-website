@@ -1,9 +1,6 @@
 import React from "react";
 import "./Contact.css";
-import mapIcon from "../../assets/images/mappointer.avif"; // Example for address icon
-import phoneIcon from "../../assets/images/call.avif"; // Example for phone icon
-import emailIcon from "../../assets/images/mail.avif"; // Example for email icon
-import { FaFacebook, FaInstagram,FaWhatsapp,FaPhone,FaMapMarker ,FaEnvelope, FaClock} from "react-icons/fa"; // Importing Facebook and Instagram icons
+import { FaFacebook, FaInstagram, FaWhatsapp, FaPhone, FaMapMarker, FaEnvelope, FaClock, FaTiktok } from "react-icons/fa"; // Importing TikTok icon
 
 const Contact = () => {
   return (
@@ -88,8 +85,8 @@ const Contact = () => {
                     <FaEnvelope size={50} color="#C13584" />
                   </div>
                   <div className="about-item-text">
-                    <a href="mailto:jearmyjwellery@gmail.com">
-                      <h3 className="fs-24 ls-2">jearmyjwellery@gmail.com</h3>
+                    <a href="mailto:jearmyjewellery@gmail.com">
+                      <h3 className="fs-24 ls-2">jearmyjewellery@gmail.com</h3>
                       <p className="text">E-mail</p>
                     </a>
                   </div>
@@ -143,6 +140,23 @@ const Contact = () => {
                       className="social-button whatsapp-button"
                     >
                       Follow Us on Instagram
+                    </a>
+                  </div>
+                </div>
+
+                {/* TikTok Section */}
+                <div className="about-item flex set-align grid">
+                  <div className="about-item-icon">
+                    <FaTiktok size={50} color="#000000" />
+                  </div>
+                  <div className="about-item-text">
+                    <a
+                      href="https://www.tiktok.com/@jea0509"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="social-button whatsapp-button"
+                    >
+                      Follow Us on TikTok
                     </a>
                   </div>
                 </div>

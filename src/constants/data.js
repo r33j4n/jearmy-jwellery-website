@@ -199,23 +199,23 @@ const testimonials = [
 
 const logos = [
   {
-    // image: `${images.logo_img_1}`,
+    image: `${images.logo_img_1}`,
+  },
+  {
+    image: `${images.logo_img_2}`,
   },
   {
     image: `${images.logo_img_3}`,
   },
   {
-    image: `${images.logo_img_3}`,
+    image: `${images.logo_img_4}`,
   },
-  {
-    // image: `${images.logo_img_4}`,
-  },
-  {
-    image: `${images.test_img_5}`,
-  },
-  {
-    image: `${images.test_img_6}`,
-  },
+  // {
+  //   image: `${images.test_img_5}`,
+  // },
+  // {
+  //   image: `${images.test_img_6}`,
+  // },
 ];
 const jewells = [
   {
