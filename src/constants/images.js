@@ -113,6 +113,12 @@ import Haram17 from "../assets/images/Necklace_Haram/Necklace_Haram12.jpeg";
 import Haram18 from "../assets/images/Necklace_Haram/Necklace_Haram13.jpeg";
 import Haram19 from "../assets/images/Necklace_Haram/Necklace_Haram14.jpeg";
 import Haram20 from "../assets/images/Necklace_Haram/Necklace_Haram15.jpeg";
+import Earing1 from "../assets/images/Earing/Earings 01.jpeg";
+import Earing2 from "../assets/images/Earing/Earings 02.jpeg";
+import Earing3 from "../assets/images/Earing/Earings 03.jpeg";
+import Earing4 from "../assets/images/Earing/Earings 04.jpeg";
+import Earing5 from "../assets/images/Earing/Earings 05.jpeg";
+import Earing6 from "../assets/images/Earing/Earings 06.jpeg";
 
 
 
@@ -133,7 +139,7 @@ const images = {
     ,AmmanThali,ChrisitianThali1,ChrisitianThali2,ChrisitianThali3,ChrisitianThali4,ChrisitianThali5,KombuThali,LingamThali,MalayalaThali1,MalayalaThali2,PattaiThali,PottuThali,RamarThali,SanguSakkaramThali,ShivanAmmanThali,ShivanThali,SirakuPillayarThali,PillayarThali,
     Necklace1,Necklace2,Necklace3,Necklace4,Necklace5,Necklace6,Necklace7,Necklace8,Necklace9,Necklace10,Necklace11,Necklace12,Necklace13,Necklace14,Necklace15,Necklace16,Necklace17,Necklace18,Necklace19,Necklace20,Necklace21,Necklace22,Necklace23,Necklace24,Necklace25,Necklace26,Necklace27,Necklace28,Necklace29,Necklace30,Necklace31,
     Necklace_Haram1,Necklace_Haram2,Necklace_Haram3,Necklace_Haram4,Necklace_Haram5,Necklace_Haram6,Necklace_Haram7,Necklace_Haram8,Necklace_Haram9,Necklace_Haram10,Necklace_Haram11,Necklace_Haram12,Necklace_Haram13,Necklace_Haram14,Necklace_Haram15,
-    Haram1,Haram2,Haram3,Haram4,Haram5,Haram6,Haram7,Haram8,Haram9,Haram10,Haram11,Haram12,Haram13,Haram14,Haram15,Haram16,Haram17,Haram18,Haram19,Haram20
+    Haram1,Haram2,Haram3,Haram4,Haram5,Haram6,Haram7,Haram8,Haram9,Haram10,Haram11,Haram12,Haram13,Haram14,Haram15,Haram16,Haram17,Haram18,Haram19,Haram20,Earing1,Earing2,Earing3,Earing4,Earing5,Earing6
 
 }
 export default images;

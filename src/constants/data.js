@@ -551,7 +551,16 @@ for (let i = 1; i <= 15; i++) {
 }
 
 const earings = [];
-const bangles = [];
+for (let i = 1; i <= 6; i++) {
+  const earing = {
+    name: `Earing Set ${i}`,
+    image: `${images["Earing" + i]}`, // Replace with your actual image paths
+    title: `Earing ${i}`,
+    price: `${5000 + i}`, // Adjust the price logic as needed
+  };
+
+  earings.push(earing);
+}const bangles = [];
 const rings = [];
 
 export {

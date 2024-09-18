@@ -115,6 +115,15 @@ const Navbar = () => {
                         </li>
                         <li>
                           <RouterLink
+                            to="/jwellery/earings"
+                            className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
+                            onClick={closeNavbar}
+                          >
+                            Earrings
+                          </RouterLink>
+                        </li>
+                        <li>
+                          <RouterLink
                             to="/jwellery/bracelets"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
                             onClick={closeNavbar}
@@ -130,16 +139,7 @@ const Navbar = () => {
                           >
                             Rings
                           </RouterLink>
-                        </li>
-                        <li>
-                          <RouterLink
-                            to="/jwellery/earings"
-                            className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
-                            onClick={closeNavbar}
-                          >
-                            Earrings
-                          </RouterLink>
-                        </li>
+                        </li>                     
                       </ul>
                     </div>
                   )}

@@ -24,9 +24,9 @@ const Aram = () => {
       <Navbar />
         <div className="content">
           <div className="aboutx">
-            <h1>Arams</h1>
+            <h1>Harams</h1>
             <p>
-            Discover the beauty of tradition with our intricately designed arams, each piece reflecting the rich heritage and craftsmanship of our culture.
+            Discover the beauty of tradition with our intricately designed harams, each piece reflecting the rich heritage and craftsmanship of our culture.
             </p>
           </div>
         </div>
