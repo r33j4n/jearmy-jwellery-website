@@ -1,10 +1,33 @@
 import React from "react";
 import "./Contact.css";
-import { FaFacebook, FaInstagram, FaWhatsapp, FaPhone, FaMapMarker, FaEnvelope, FaClock, FaTiktok } from "react-icons/fa"; // Importing TikTok icon
+import {
+  FaFacebook,
+  FaInstagram,
+  FaWhatsapp,
+  FaPhone,
+  FaMapMarker,
+  FaEnvelope,
+  FaClock,
+  FaTiktok
+} from "react-icons/fa"; // Importing TikTok icon
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   return (
     <div className="contact section-p">
+      <Helmet>
+        <title>Contact Jearmy Jewellery | Traditional Jewellery in Sydney</title>
+        <meta
+          name="description"
+          content="Get in touch with Jearmy Jewellery in Sydney for any queries or support. Follow us on Facebook, Instagram, TikTok, or contact us through WhatsApp, email, or phone."
+        />
+        <meta
+          name="keywords"
+          content="Contact Jearmy Jewellery, Sydney jewellery store, WhatsApp contact, call Jearmy Jewellery, follow on Instagram, Facebook, TikTok"
+        />
+        <link rel="canonical" href="https://www.jearmyjwellery.com/contact" />
+      </Helmet>
+
       <div className="contact-title">
         <h3 className="text-gold">
           Contact <span className="text-dark">Us</span>
@@ -19,11 +42,11 @@ const Contact = () => {
           <div className="about-grid parent-container">
             <div className="about-content">
               <div className="about-grid parent-container">
-                
+
                 {/* Address Section */}
-                <div className="about-item flex set-align grid">
+                <section className="about-item flex set-align grid">
                   <div className="about-item-icon">
-                    <FaMapMarker size={50} color="#4267B2" />
+                    <FaMapMarker size={50} color="#4267B2" alt="Map Icon" />
                   </div>
                   <div className="about-item-text">
                     <h3 className="fs-24 ls-2">106A Pendle Way, Pendle Hill, NSW 2145, Australia</h3>
@@ -36,12 +59,12 @@ const Contact = () => {
                       Get Directions
                     </a>
                   </div>
-                </div>
+                </section>
 
                 {/* Phone Section */}
-                <div className="about-item flex set-align grid">
+                <section className="about-item flex set-align grid">
                   <div className="about-item-icon">
-                    <FaPhone size={50}/>
+                    <FaPhone size={50} alt="Phone Icon" />
                   </div>
                   <div className="about-item-text">
                     <div className="phone-list">
@@ -66,23 +89,23 @@ const Contact = () => {
                     </div>
                     <p className="text">Connect with Call</p>
                   </div>
-                </div>
+                </section>
 
                 {/* Working Hours Section */}
-                <div className="about-item flex set-align grid">
+                <section className="about-item flex set-align grid">
                   <div className="about-item-icon">
-                    <FaClock size={50} color="#4267B2" />
+                    <FaClock size={50} color="#4267B2" alt="Working Hours Icon" />
                   </div>
                   <div className="about-item-text">
                     <h3 className="fs-24 ls-2">10.00 AM TO 7.00 PM</h3>
                     <p className="text">Mon-Sat</p>
                   </div>
-                </div>
+                </section>
 
                 {/* Email Section */}
-                <div className="about-item flex set-align grid">
+                <section className="about-item flex set-align grid">
                   <div className="about-item-icon">
-                    <FaEnvelope size={50} color="#C13584" />
+                    <FaEnvelope size={50} color="#C13584" alt="Email Icon" />
                   </div>
                   <div className="about-item-text">
                     <a href="mailto:jearmyjewellery@gmail.com">
@@ -90,12 +113,12 @@ const Contact = () => {
                       <p className="text">E-mail</p>
                     </a>
                   </div>
-                </div>
+                </section>
 
                 {/* WhatsApp Section */}
-                <div className="about-item flex set-align grid">
+                <section className="about-item flex set-align grid">
                   <div className="about-item-icon">
-                    <FaWhatsapp size={50} color="#25D366" />
+                    <FaWhatsapp size={50} color="#25D366" alt="WhatsApp Icon" />
                   </div>
                   <div className="about-item-text">
                     <a
@@ -108,12 +131,12 @@ const Contact = () => {
                     </a>
                     <p className="text">Connect through WhatsApp</p>
                   </div>
-                </div>
+                </section>
 
                 {/* Facebook Section */}
-                <div className="about-item flex set-align grid">
+                <section className="about-item flex set-align grid">
                   <div className="about-item-icon">
-                    <FaFacebook size={50} color="#4267B2" />
+                    <FaFacebook size={50} color="#4267B2" alt="Facebook Icon" />
                   </div>
                   <div className="about-item-text">
                     <a
@@ -125,12 +148,12 @@ const Contact = () => {
                       Like Our Page on Facebook
                     </a>
                   </div>
-                </div>
+                </section>
 
                 {/* Instagram Section */}
-                <div className="about-item flex set-align grid">
+                <section className="about-item flex set-align grid">
                   <div className="about-item-icon">
-                    <FaInstagram size={50} color="#C13584" />
+                    <FaInstagram size={50} color="#C13584" alt="Instagram Icon" />
                   </div>
                   <div className="about-item-text">
                     <a
@@ -142,12 +165,12 @@ const Contact = () => {
                       Follow Us on Instagram
                     </a>
                   </div>
-                </div>
+                </section>
 
                 {/* TikTok Section */}
-                <div className="about-item flex set-align grid">
+                <section className="about-item flex set-align grid">
                   <div className="about-item-icon">
-                    <FaTiktok size={50} color="#000000" />
+                    <FaTiktok size={50} color="#000000" alt="TikTok Icon" />
                   </div>
                   <div className="about-item-text">
                     <a
@@ -159,7 +182,7 @@ const Contact = () => {
                       Follow Us on TikTok
                     </a>
                   </div>
-                </div>
+                </section>
                 
               </div>
             </div>

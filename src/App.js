@@ -40,11 +40,11 @@ function App() {
           {`
             {
               "@context": "https://schema.org",
-              "@type": "JewelryStore",
+              "@type": "JewelleryStore",
               "name": "Jearmy Jewellery",
-              "image": "https://www.jearmyjwellery.com/wp-content/uploads/2023/06/vogue-logo-header-1.png",
-              "@id": "https://www.jearmyjwellery.com",
-              "url": "https://www.jearmyjwellery.com",
+              "image": "https://www.jearmyjewellery.com/android-chrome-512x512.png",
+              "@id": "https://www.jearmyjewellery.com",
+              "url": "https://www.jearmyjewellery.com",
               "telephone": "+61413593119",
               "address": {
                 "@type": "PostalAddress",

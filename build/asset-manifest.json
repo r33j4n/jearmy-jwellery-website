@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.54e5a7f7.css",
-    "main.js": "/static/js/main.ff2785fc.js",
+    "main.js": "/static/js/main.70b712c9.js",
     "static/media/ringtype.jpeg": "/static/media/ringtype.006c9c74f19ce1798ed9.jpeg",
     "static/media/Necklace_Haram10.jpeg": "/static/media/Necklace_Haram10.482983ff244d5dd72d42.jpeg",
     "static/media/earingtypes.jpeg": "/static/media/earingtypes.047f5c56b1d479712f08.jpeg",
@@ -108,17 +108,17 @@
     "static/media/time.avif": "/static/media/time.09fb3bacc95cac950ffb.avif",
     "static/media/mail.avif": "/static/media/mail.b52c63334a836c350ca5.avif",
     "static/media/mra.avif": "/static/media/mra.60d21f7e071d5cc9c63e.avif",
-    "static/media/mappointer.avif": "/static/media/mappointer.e5d16441208618708913.avif",
     "index.html": "/index.html",
+    "static/media/mappointer.avif": "/static/media/mappointer.e5d16441208618708913.avif",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "main.54e5a7f7.css.map": "/static/css/main.54e5a7f7.css.map",
-    "main.ff2785fc.js.map": "/static/js/main.ff2785fc.js.map"
+    "main.70b712c9.js.map": "/static/js/main.70b712c9.js.map"
   },
   "entrypoints": [
     "static/css/main.54e5a7f7.css",
-    "static/js/main.ff2785fc.js"
+    "static/js/main.70b712c9.js"
   ]
 }

@@ -20,13 +20,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" aria-label="Main Navigation">
       <div className="container">
         <div className="navbar-content">
           <div className="brand-and-toggler flex flex-sb">
             <RouterLink to="/?scrollTo=home" className="navbar-brand"
                   onClick={() => handleScrollTo("home")}>
-              <img src={Logo} alt="Jearmy Jewellery" className="logo" />
+              <img src={Logo} alt="Jearmy Jewellery Logo - Best Traditional Jewellery in Sydney" className="logo" />
             </RouterLink>
             <RouterLink to="/?scrollTo=home" className="navbar-brand"
                   onClick={() => handleScrollTo("home")}>
@@ -34,6 +34,7 @@ const Navbar = () => {
             </RouterLink>
             <button
               type="button"
+              aria-label="Toggle Navigation Menu"
               className="navbar-open-btn text-white"
               onClick={() => setNavToggler(!navToggler)}
             >
@@ -49,18 +50,20 @@ const Navbar = () => {
             >
               <button
                 type="button"
+                aria-label="Close Navigation Menu"
                 className="navbar-close-btn text-white"
                 onClick={closeNavbar}
               >
                 <FaTimes size={30} />
               </button>
-              <ul className="navbar-nav">
+              <ul className="navbar-nav" aria-label="Primary Navigation Links">
                 {/* All Collections */}
                 <li className="nav-item">
                   <RouterLink
                     to="/?scrollTo=allcollection"
                     className="nav-link text-white ls-1 text-uppercase fw-6 fs-22"
                     onClick={() => handleScrollTo("allcollection")}
+                    aria-label="All Collections"
                   >
                     All Collections
                   </RouterLink>
@@ -71,17 +74,20 @@ const Navbar = () => {
                   <button
                     className="nav-link text-white ls-1 text-uppercase fw-6 fs-22"
                     onClick={toggleCategories}
+                    aria-label="Jewelry Categories"
+                    aria-expanded={showCategories}
                   >
                     Jewelry
                   </button>
                   {showCategories && (
-                    <div className="dropdown-content">
+                    <div className="dropdown-content" role="menu">
                       <ul>
                         <li>
                           <RouterLink
                             to="/jwellery/thaali"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
                             onClick={closeNavbar}
+                            aria-label="Explore Thaali Collection"
                           >
                             Thaali
                           </RouterLink>
@@ -91,6 +97,7 @@ const Navbar = () => {
                             to="/jwellery/harams"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
                             onClick={closeNavbar}
+                            aria-label="Explore Harams Collection"
                           >
                             Harams
                           </RouterLink>
@@ -100,6 +107,7 @@ const Navbar = () => {
                             to="/jwellery/necklace"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
                             onClick={closeNavbar}
+                            aria-label="Explore Necklaces Collection"
                           >
                             Necklaces
                           </RouterLink>
@@ -109,6 +117,7 @@ const Navbar = () => {
                             to="/jwellery/chains"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
                             onClick={closeNavbar}
+                            aria-label="Explore Chains Collection"
                           >
                             Chains
                           </RouterLink>
@@ -118,6 +127,7 @@ const Navbar = () => {
                             to="/jwellery/earings"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
                             onClick={closeNavbar}
+                            aria-label="Explore Earrings Collection"
                           >
                             Earrings
                           </RouterLink>
@@ -127,6 +137,7 @@ const Navbar = () => {
                             to="/jwellery/bracelets"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
                             onClick={closeNavbar}
+                            aria-label="Explore Bracelets Collection"
                           >
                             Bracelets
                           </RouterLink>
@@ -136,10 +147,11 @@ const Navbar = () => {
                             to="/jwellery/rings"
                             className="dropdown-link text-white ls-1 text-uppercase fw-2 fs-10"
                             onClick={closeNavbar}
+                            aria-label="Explore Rings Collection"
                           >
                             Rings
                           </RouterLink>
-                        </li>                     
+                        </li>
                       </ul>
                     </div>
                   )}
@@ -151,6 +163,7 @@ const Navbar = () => {
                     to="/?scrollTo=gallery"
                     className="nav-link text-white ls-1 text-uppercase fw-6 fs-22"
                     onClick={() => handleScrollTo("gallery")}
+                    aria-label="Gallery"
                   >
                     Gallery
                   </RouterLink>
@@ -162,6 +175,7 @@ const Navbar = () => {
                     to="/?scrollTo=about"
                     className="nav-link text-white ls-1 text-uppercase fw-6 fs-22"
                     onClick={() => handleScrollTo("about")}
+                    aria-label="About Us"
                   >
                     About
                   </RouterLink>
@@ -173,6 +187,7 @@ const Navbar = () => {
                     to="/?scrollTo=contact"
                     className="nav-link text-white ls-1 text-uppercase fw-6 fs-22"
                     onClick={() => handleScrollTo("contact")}
+                    aria-label="Contact Us"
                   >
                     Contact
                   </RouterLink>

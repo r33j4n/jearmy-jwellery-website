@@ -1,24 +1,36 @@
 import React from 'react';
-import "./Header.css";
+import './Header.css';
 import Navbar from '../Navbar/Navbar';
 import { Link as ScrollLink } from 'react-scroll'; // Import react-scroll Link
+import { Helmet } from 'react-helmet'; // Import Helmet for meta tags
 
 const Header = () => {
   return (
-    <div className='header flex flex-col' id="header">
+    <header className='header flex flex-col' id="header">
+      <Helmet>
+        <title>Jearmy Jewellery | High-Class Craftsmanship in Sydney</title>
+        <meta 
+          name="description" 
+          content="Explore Jearmy Jewellery's high-class craftsmanship, offering you the finest traditional and contemporary jewellery in Sydney. Discover our collections." 
+        />
+        <meta 
+          name="keywords" 
+          content="Jearmy Jewellery, Jewellery Sydney, traditional jewellery, gold jewellery, high-class craftsmanship, wedding jewellery, luxury jewellery" 
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.jearmyjewellery.com" />
+      </Helmet>
+
       <Navbar />
 
       <div className='container flex'>
-        <div className='header-content'>
-          <h2 className='text-uppercase text-white op-07 fw-6 ls-2'></h2>
+        <section className='header-content'>
+          <h2 className='text-uppercase text-white op-07 fw-6 ls-2'>Timeless Craftsmanship</h2>
           <h1 className='text-white fw-6 header-title'>
-            Jearmy <span className='text-brown'>  Jewellery</span>
-          </h1>
-          <h1 className='text-white fw-6 header-title'>
-            PTY <span className='text-brown'>  LTD</span>
+            Jearmy <span className='text-brown'>Jewellery</span> PTY <span className='text-brown'>LTD</span>
           </h1>
           <p className='text-white fw-2 header-title'>
-            Highclass craftsmanship which you have always deserved
+            High-class craftsmanship which you have always deserved.
           </p>
           <div className='btn-groups flex'>
             <ScrollLink
@@ -42,9 +54,9 @@ const Header = () => {
               Contact Us
             </ScrollLink>
           </div>
-        </div>
+        </section>
       </div>
-    </div>
+    </header>
   );
 };
 

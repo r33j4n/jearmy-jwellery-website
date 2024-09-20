@@ -19,28 +19,29 @@ import Gallery from './pages/galleryPage';
 import AboutUS from './pages/aboutPage';
 import ContactPage from './pages/contactPage';
 
+// Example: Adding Helmet to enhance SEO on specific routes
+
+import { HelmetProvider } from 'react-helmet-async';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path = "/" element = {<App />}></Route>
-      <Route path = "/jwellery" element = {<Jwellery/>}></Route>
-      <Route path="/jwellery/chains" element={<Chain/>}></Route>
-      <Route path="/jwellery/thaali" element={<Thaali/>}></Route>
-      <Route path="/jwellery/bracelets" element={<Bracelet/>}></Route>
-      <Route path="/jwellery/harams" element={<Aram/>}></Route>
-      <Route path="/jwellery/necklace" element={<Necklace/>}></Route>
-      <Route path="/jwellery/earings" element={<Earing/>}></Route>
-      <Route path="/jwellery/bangles" element={<Bangle/>}></Route>
-      <Route path="/jwellery/rings" element={<Ring/>}></Route>
-      <Route path="/gallery" element={<Gallery/>}></Route>
-      <Route path='/about' element={<AboutUS />} />
-      <Route path='/contact' element={<ContactPage/>}></Route>
-      
-
-
-     
-    </Routes>
-  </BrowserRouter>
+  <HelmetProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/jwellery" element={<Jwellery />} />
+        <Route path="/jwellery/chains" element={<Chain />} />
+        <Route path="/jwellery/thaali" element={<Thaali />} />
+        <Route path="/jwellery/bracelets" element={<Bracelet />} />
+        <Route path="/jwellery/harams" element={<Aram />} />
+        <Route path="/jwellery/necklace" element={<Necklace />} />
+        <Route path="/jwellery/earings" element={<Earing />} />
+        <Route path="/jwellery/bangles" element={<Bangle />} />
+        <Route path="/jwellery/rings" element={<Ring />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path='/about' element={<AboutUS />} />
+        <Route path='/contact' element={<ContactPage />} />
+      </Routes>
+    </BrowserRouter>
+  </HelmetProvider>
 );
